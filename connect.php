@@ -13,7 +13,7 @@
 
 
     $conn = mysqli_init();
-    mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
+    mysqli_ssl_set($con,NULL,NULL, "./DigiCertGlobalRootCA.crt.pem", NULL, NULL);
     mysqli_real_connect($conn, "munonchat.mysql.database.azure.com", "tienanhdz", "phuc17@@", "banmu", 3306, MYSQLI_CLIENT_SSL);
  ?>
  
